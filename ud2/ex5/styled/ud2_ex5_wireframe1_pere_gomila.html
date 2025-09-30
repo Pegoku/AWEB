@@ -4,12 +4,40 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
 	<title>Pere Gomila - Wireframe1</title>
+	<style type="text/css" media="screen">
+	    header{
+		position: relative;
+		align-items: horizontal;
+		justify-content: horizontal;
+		height:4rem;
+	    }
+	    
+	    main{
+		padding-top:4rem;
+	    }
+	   .tagline{
+		position:relative;
+		width:80%;
+		align-items:center;
+		justify-content: center;
+	    }
+	    
+	    .tagline_logo{
+		position: flex; 
+		top: 50%; 
+		left:50%; 
+		width: 80%; 
+		height: auto; 
+		display:block; 
+		object-fit: contain;		
+	    }
+	</style>
     </head>
     <body>
 	<header>
-	    <img src="." alt="logo"/>
+	    <img src="https://redols.caib.es/c07001964/wp-content/uploads/sites/189/2022/07/logo.png" alt="logo"/>
 	    <input type="text" value="" name="Search Field" id="search"/>
-	    <nav>
+	    <nav style="display: inline;">
 		<a href="#">Home</a>
 		<a href="#">About</a>
 		<a href="#">Shop</a>
@@ -18,12 +46,10 @@
 	    </nav>
 	</header>
 	<main>
-	    <section>
-		<img src="." alt="BackGround image for tagline"/>
-		<div>
-		    <h3>Tagline describing your e-shop</h3>
-		    <button>Shop Now</button>
-		</div>
+	    <section class="tagline">
+		<img src="https://redols.caib.es/c07001964/wp-content/uploads/sites/189/2022/07/logo.png" alt="BackGround image for tagline" width="60%" class="tagline_logo"/>
+		<h3 class="tagline_text">Tagline describing your e-shop</h3>
+		<button class="tagline_button btn">Shop Now</button>
 	    </section>
 	    <section>
 		<h3>Featured Products</h3>
@@ -77,25 +103,25 @@
 		<div>
 		    <article>
 			<img src="." alt="Article Image"/> 
-			    <h5>PRODUCT NAME <b>***</b>**</h5>
-			    <p>$200</p>
+			<h5>PRODUCT NAME <b>***</b>**</h5>
+			<p>$200</p>
 		    </article>
 		    <article>
 			<img src="." alt="Article Image"/> 
-			    <h5>PRODUCT NAME <b>***</b>**</h5>
-			    <p>$200</p>
+			<h5>PRODUCT NAME <b>***</b>**</h5>
+			<p>$200</p>
 		    </article>
 		</div>
 		<div>
 		    <article>
 			<img src="." alt="Article Image"/> 
-			    <h5>PRODUCT NAME <b>***</b>**</h5>
-			    <p>$200</p>
+			<h5>PRODUCT NAME <b>***</b>**</h5>
+			<p>$200</p>
 		    </article>
 		    <article>
 			<img src="." alt="Article Image"/> 
-			    <h5>PRODUCT NAME <b>***</b>**</h5>
-			    <p>$200</p>
+			<h5>PRODUCT NAME <b>***</b>**</h5>
+			<p>$200</p>
 		    </article>
 		</div>
 		</div>
