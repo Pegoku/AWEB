@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Ud2_ex9_pere_gomila</title>
+	<style type="text/css" media="screen">
+.red{ color:#FF0000;} 
+	</style>
+    </head>
+    <body>
+	<main>
+	    <section>
+		<header>
+		    <h2>DADES DE LA PERSONA PARTICIPANT</h2>
+		</header>	
+
+		<form action="" method="get">
+		    <p>
+		    <label for="iNom">Nom:<span class="red">*</span></label>
+		    <input type="text" name="iNom" id="iNom"/>
+		    </p>
+
+		    <p>
+		    <label for="iCog">Cognom:<span class="red">*</span></label>
+		    <input type="text" name="iCog" id="iCog"/>
+		    </p>
+
+		    <p>
+		    <label for="iDni">DNI:<span class="red">*</span></label>
+		    <input type="text" name="iDni" id="iDni"/>
+		    </p>
+
+		    <p>
+		    <label for="iTel">Tel:<span class="red">*</span></label>
+		    <input type="tel" name="iTel" id="iTel"/>
+		    </p>
+
+		    <p>
+		    <label for="iDate">Date:<span class="red">*</span></label>
+		    <input type="date" name="iDate" id="iDate"/>
+		    </p>
+
+		    <p>
+		    <span>Gènere:<span class="red">*</span></span>
+		    <input type="radio" name="iGen" id="Dona"/>
+		    <label for="Dona">Dona</label>
+		    <input type="radio" name="iGen" id="Home"/>
+		    <label for="Home">Home</label>
+		    <input type="radio" name="iGen" id="NB"/>
+		    <label for="NB">No binari</label>
+		    </p>
+		    
+		    <p>
+
+		    <label for="llistaVies">Tipus de Via</label>
+		    <input list="listVies" name="llistaVies" id="llistaVies" placeholder="ex. carrer"/>
+		    <datalist id="listVies" name="listVies">
+			<option value="carrer"></option>
+			<option value="avinguda"></option>
+			<option value="carretera"></option>
+			<option value="ronda"></option>
+			<option value="autopista"></option>
+			<option value="rambla"></option>
+			<option value="camí"></option>
+		    </datalist>
+
+</p>
+<p>
+		    <label for="iAdr">Via:<span class="red">*</span></label>
+		    <input type="text" name="iAdr" id="iAdr"/>
+		    </p>
+		    
+<p>
+		    <label for="iAdrNum">Via Num:<span class="red">*</span></label>
+		    <input type="text" name="iAdrNum" id="iAdrNum" required/>
+		    </p>
+
+		    <p>
+		    <label for="iPob">Població:<span class="red">*</span></label>
+		    <input list="iPobl" name="iPob" id="iPob" required/>
+		    <datalist id="iPobl" name="iPobl">
+			<option value="Mao"></option>
+			<option value="Alaior"></option>
+			<option value="Ciutadella"></option>
+			<option value="Altres"></option>
+		    </datalist>
+
+		    </p>
+
+		    <p>
+		    <label for="iCodi">Codi postal:</label>
+		    <input type="number" name="iCodi" id="iCodi"/>
+		    </p>
+
+		    <p>
+		    <label for="iClub">Club:</label>
+		    <input type="text" name="iClub" id="iClub"/>
+		    </p>
+
+		    <p>
+		    <label for="iTalla">Talla samarreta:</label>
+		    <input type="text" name="iTalla" id="iTalla"/>
+		    </p>
+
+		</form>
+
+
+	    </section>
+	</main>
+    </body>
+</html>
