@@ -3,58 +3,59 @@
     <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
-	<title>Ud2_ex9_pere_gomila</title>
+	<title>Formulari d'inscripció a la cursa XYZ.</title>
 	<style type="text/css" media="screen">
 .red{ color:#FF0000;} 
 	</style>
     </head>
     <body>
 	<main>
-	    <section>
+
+	    <form action="" method="get">
+
+		<section>
 		<header>
 		    <h2>DADES DE LA PERSONA PARTICIPANT</h2>
 		</header>	
-
-		<form action="" method="get">
 		    <p>
 		    <label for="iNom">Nom:<span class="red">*</span></label>
-		    <input type="text" name="iNom" id="iNom"/>
+		    <input type="text" name="iNom" id="iNom" maxlength="30" minlength="2"/>
 		    </p>
 
 		    <p>
 		    <label for="iCog">Cognom:<span class="red">*</span></label>
-		    <input type="text" name="iCog" id="iCog"/>
+		    <input type="text" name="iCog" id="iCog" minlength="2" maxlength"50"/>
 		    </p>
 
 		    <p>
 		    <label for="iDni">DNI:<span class="red">*</span></label>
-		    <input type="text" name="iDni" id="iDni"/>
+		    <input type="text" name="iDni" id="iDni" minlength="9" maxlength"9" pattern="[0-9]{8}[A-z]" placeholder="12345678A"/>
 		    </p>
 
 		    <p>
 		    <label for="iTel">Tel:<span class="red">*</span></label>
-		    <input type="tel" name="iTel" id="iTel"/>
+		    <input type="tel" name="iTel" id="iTel" maxlength="100"/>
 		    </p>
 
 		    <p>
-		    <label for="iDate">Date:<span class="red">*</span></label>
-		    <input type="date" name="iDate" id="iDate"/>
+		    <label for="iDate">Data de Naixament:<span class="red">*</span></label>
+		    <input type="date" name="iDate" id="iDate" required/>
 		    </p>
 
 		    <p>
 		    <span>Gènere:<span class="red">*</span></span>
-		    <input type="radio" name="iGen" id="Dona"/>
+		    <input type="radio" name="iGen" id="Dona" required/>
 		    <label for="Dona">Dona</label>
-		    <input type="radio" name="iGen" id="Home"/>
+		    <input type="radio" name="iGen" id="Home" required/>
 		    <label for="Home">Home</label>
-		    <input type="radio" name="iGen" id="NB"/>
+		    <input type="radio" name="iGen" id="NB" required/>
 		    <label for="NB">No binari</label>
 		    </p>
-		    
+
 		    <p>
 
-		    <label for="llistaVies">Tipus de Via</label>
-		    <input list="listVies" name="llistaVies" id="llistaVies" placeholder="ex. carrer"/>
+		    <label for="llistaVies">Tipus de Via:<span class="red">*</span></label>
+		    <input list="listVies" name="llistaVies" id="llistaVies" placeholder="ex. carrer" required/>
 		    <datalist id="listVies" name="listVies">
 			<option value="carrer"></option>
 			<option value="avinguda"></option>
@@ -65,48 +66,101 @@
 			<option value="camí"></option>
 		    </datalist>
 
-</p>
-<p>
+		    </p>
+		    <p>
 		    <label for="iAdr">Via:<span class="red">*</span></label>
 		    <input type="text" name="iAdr" id="iAdr"/>
 		    </p>
-		    
-<p>
+
+		    <p>
 		    <label for="iAdrNum">Via Num:<span class="red">*</span></label>
 		    <input type="text" name="iAdrNum" id="iAdrNum" required/>
 		    </p>
 
 		    <p>
 		    <label for="iPob">Població:<span class="red">*</span></label>
-		    <input list="iPobl" name="iPob" id="iPob" required/>
-		    <datalist id="iPobl" name="iPobl">
-			<option value="Mao"></option>
-			<option value="Alaior"></option>
-			<option value="Ciutadella"></option>
-			<option value="Altres"></option>
-		    </datalist>
+		    <select required id="iPobl" name="iPobl">
+			<option value="">Trieu una opció</option>
+			<option value="Mao">Mao</option>
+			<option value="Alaior">Alaior</option>
+			<option value="Ciutadella">Ciutadella</option>
+			<option value="Altres">Altres</option>
+		    </select>
 
 		    </p>
 
 		    <p>
 		    <label for="iCodi">Codi postal:</label>
-		    <input type="number" name="iCodi" id="iCodi"/>
+		    <input type="number" name="iCodi" id="iCodi" min="07700" max="07799" size="6"/>
 		    </p>
 
 		    <p>
 		    <label for="iClub">Club:</label>
-		    <input type="text" name="iClub" id="iClub"/>
+		    <textarea name="iClub" id="iClub"></textarea>
 		    </p>
 
 		    <p>
 		    <label for="iTalla">Talla samarreta:</label>
-		    <input type="text" name="iTalla" id="iTalla"/>
+		    <select name="iTalla" id="iTalla">
+			<option value="">Trieu una opció</option>
+			<option value="XS">XS</option>
+			<option value="S">S</option>
+			<option value="M">M</option>
+			<option value="XL">XL</option>
+			<option value="XXL">XXL</option>
+		    </select>
 		    </p>
 
-		</form>
+		</section>
+		
+<hr>
+
+		<section>
+		<header>
+		    <h2>DADES DE LA CURSA</h2>
+		</header>
+
+		    <p>
+		    <label for"circuit">Circuit (verd, blau o vermell)<span class="red">*</span></label>
+		    <select name="circuit" id="circuit" required>
+			<option value="">Seleccionar cursa</option>
+			<option value="mini">Cursa mini (verd 1.700 m aprox.)</option>
+			<option value="mid">Cursa mitjana (blau 4.995 m aprox.)</option>
+			<option value="gran">Cursa gran (vermell 10.000 m aprox.)</option>
+		    </select>
+		    </p>
+
+    <p>
+		    <label for="comentaris">Comentaris:</label>
+		    <textarea name="comentaris" id="comentaris"></textarea>
+    </p>
+
+
+		</section>
+		
+		<section>
+    <p>
+    <input type="checkbox" checked name="rules" id="rules" required/>
+    <label for="rules">Accepto i assumeixo les normes de participació que regulen la Cursa Popular
+Ciutat de XYZ.<span class="red">*</span></label>
+    </p>
+    
+    <p>
+    <input type="checkbox" name="ads" id="ads" required/>
+    <label for="ads">Estic interessat/da en rebre informació sobre les activitats esportives
+organitzades per l’Ajuntament i dono el meu consentiment per a la tramesa
+d’informació al respecte.<span class="red">*</span></label>
+
+    </p>
+
+		</section>
+
+		    <input type="submit" value="Envia" />
+	    </form>
 
 
 	    </section>
+
 	</main>
     </body>
 </html>
