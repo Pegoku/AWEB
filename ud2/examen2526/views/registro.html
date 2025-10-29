@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<header>
+			<img src="../assets/img/logo.jpg"/>	
+			<h1 id="top">AWEB - Examen UD2 - Registro</h1>
+			<a href="../index.html">Inicio</a>
+		</header>
+		<hr>
+		<main>
+			<article>
+				<h2>Registrarse</h2>
+			<pre>Rellene los siguientes campos.
+La contraseña debe contener por lo menos los siguientes caracteres y tener una longitud entre 8 y 20 caracteres. Para ello se usará una expresión regular que tienes copiada en el fichero README:
+<i>- Alguna mayúscula
+- Alguna minúscula
+- Algún número</i></pre>
+			<form method="get" target="#">
+				<p>
+				<label for="name">Nombre de usuario</label>
+				<input type="text" minlength="5" maxlength="10">
+				</p>
+				<p>
+				<label for="gen">Género:</label>
+				<input type="radio" id="w" name="gen" >
+				<label for="w"> Mujer</label>
+				<input type="radio" id="m" name="gen" >
+				<label for="w"> Hombre</label>
+				<input type="radio" id="o" name="gen" >
+				<label for="w"> No binario</label>
+				</p>			
+				<p>
+				<label for="cp">Código Postal</label>
+				<input type="number" max="99999" >
+				</p>
+				<p>
+				<label for="obs"> Observaciones</label>
+				</p>
+				<p>
+				<textarea id="obs" cols="80" rows="10" placeholder="Introduce otra información de interés aquí...
+"></textarea>
+				</p>
+				<p>
+				<input type="submit" value="Registrarse">
+				</p>
+			</form>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+Registro
+Detalles del Proyecto
+En este proyecto, es fundamental prestar atención a cada detalle para obtener un buen resultado. El uso de HTML permite estructurar la información de manera ordenada. Recuerda que, sin usar hojas de estilo, el diseño puede verse algo básico.
+Consideraciones importantes
+Antes de finalizar, es importante que tengas en cuenta las siguientes pautas:
+Lee cuidadosamente las indicaciones y asegúrate de cumplir con todos los requisitos, ya que los errores pueden afectar la nota final.
+Modifica el título de todos los documentos HTML para que muestre tu nombre tanto en la página como en la pestaña del navegador.
+¿Dónde exactamente?
+Debes cambiarlo en dos lugares:
+En el título visible dentro de la página HTML
+En el título que aparece en la pestaña del navegador
+Evita utilizar la etiqueta <br> para los saltos de línea, de lo contrario, no se corregirá la actividad.
+¿Por qué no?
+Porque es considerado una mala práctica en HTML.
+En cada campo de los formularios, asegúrate de incluir un texto explicativo que indique qué información se debe introducir, y que al hacer clic, el campo obtenga el foco.
+Esto facilita la usabilidad del formulario.
+Información de la compañía
+Departamento
+Ventas
+Soporte
+Descripción
+Ventas corporativas
+Ventas al consumidor
+Ventas internacionales
+Soporte técnico
+Atención al cliente
+Contacto Principal
+Lucía Fernández
+Laura Martínez
+Javier Rodríguez
+lucia@empresa.com
+laura@empresa.com
+javier@empresa.com
+javier_ac@empresa.com
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam deserunt magni ullam nisi. Omnis aut, eligendi ab culpa quia doloremque quidem quod odio quas porro nihil! Repellendus architecto veritatis vel magnam dolorem necessitatibus voluptas deleniti dolore officia qui assumenda soluta rem nostrum fugiat iusto vitae voluptatem non a, adipisci earum? Quae qui animi quia reprehenderit quo autem, consequatur totam libero architecto, hic sapiente ipsum tenetur obcaecati reiciendis optio ullam corporis eaque soluta quam dolor sint facilis debitis voluptatibus. Exercitationem, similique nemo deserunt sapiente cum quo, delectus soluta ex sunt reiciendis iste quisquam, dolor aut. Accusamus nobis consequuntur dolorem molestiae voluptates vel, blanditiis quas modi iusto ratione aliquid ullam nemo praesentium consectetur nihil, culpa esse quidem? Alias nesciunt laudantium quam quas soluta blanditiis labore nihil eum eaque. Nesciunt tenetur, mollitia quisquam recusandae sunt tempora quasi autem illum eaque deleniti nemo eos ipsam illo officiis doloremque eius aut necessitatibus inventore accusamus earum consequatur ipsa laborum. Totam voluptatem quis veniam exercitationem hic iure quod, laudantium non repellat nobis. Eum iure consequatur, error nihil nesciunt ad voluptates, mollitia accusamus fugiat, deserunt consequuntur at id minus nobis cupiditate fuga magni perspiciatis a similique? Sit perspiciatis corrupti quod quos cumque eius ut odit nesciunt hic architecto? Maiores obcaecati alias consequuntur nobis voluptatum nulla voluptates perferendis, impedit, explicabo ea aliquid veritatis tenetur itaque dignissimos odio illo ex, minus nostrum debitis assumenda aperiam suscipit? Error eum dignissimos minus voluptatem nemo illo sint excepturi sit eos ipsum perferendis, provident ea quasi adipisci itaque. Itaque, dolor aspernatur at optio ipsum esse quos deserunt quas eveniet iusto repudiandae dicta ipsa numquam expedita inventore cumque minima fuga, unde quo perferendis nemo alias earum voluptatibus. Libero earum ab doloribus vel adipisci soluta, ipsam culpa ipsa nobis corrupti a facilis nam quas pariatur quis non illum rem cumque eveniet amet ullam dignissimos assumenda! Alias. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, sapiente nostrum nam dicta inventore asperiores odio doloribus nobis fugit voluptatum maiores, praesentium eius. Labore aliquid tenetur temporibus nesciunt fugiat! Blanditiis officiis ex ipsam libero, accusantium perferendis earum aspernatur aliquid totam praesentium dolorem dolorum debitis consequuntur officia laudantium deleniti natus sequi!
+
+Volver al inicio
+
+Inicio
+Registrarse
+Rellene los siguientes campos. 
+La contraseña debe contener por lo menos los siguientes caracteres y tener una longitud entre 8 y 20 caracteres. Para ello se usará una expresión regular que tienes copiada en el fichero README:
+- Alguna mayúscula
+- Alguna minúscula
+- Algún número</i></pre>
+Nombre de usuario:
+Género:
+Mujer
+Hombre
+No binario
+Código Postal:
+Observaciones:
+Introduce otra información de interés aquí...
+Registrarse
