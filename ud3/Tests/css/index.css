@@ -1,7 +1,11 @@
 .maincontent{
-    background-color:burlywood;
+    background-color:rgb(211, 182, 144);
 }
 
 p{
-    color: darkblue;
+    color: rgb(61, 61, 172);
+}
+header h3{
+
+    color: rgb(61, 61, 172);
 }
