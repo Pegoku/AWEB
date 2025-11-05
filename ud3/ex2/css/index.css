@@ -59,3 +59,10 @@ header nav a:visited{
 .article3{
   background-color:#FE6D73
 }
+footer{
+  margin-top: 30px;
+  padding:20px;
+  background-color: #333;
+  color: white;
+  border-top: 5px solid #224c9d;
+}
