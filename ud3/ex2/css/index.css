@@ -1,0 +1,38 @@
+*{
+  font-family: sans-serif;
+  margin: 0;
+}
+
+header{
+  background-color: rgb(67, 141, 205);
+}
+
+main{
+  background-color: chocolate;
+}
+
+
+section p{
+  color: aliceblue  
+}
+
+section > p{
+  color: aqua;
+}
+
+h2 + p{
+  text-decoration-line: line-through;
+}
+
+h2 ~ p{
+  color: brown;
+}
+
+.clase1{
+  font-weight: bold;
+  display:block;
+  align-content: center;
+  height: 20rem;
+}
+
+
