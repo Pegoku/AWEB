@@ -1,43 +1,61 @@
 *{
-  font-family: sans-serif;
-  margin: 0;
+  margin:0;
+  padding:0;
+  text-align: center;
+}
+body{
+  margin: 20px;
+  padding: 20px;
+  width:90%;
+  min-height: 600px;
+  border: 3px solid gray;
 }
 
-header{
-  background-color: rgb(67, 141, 205);
+header h1{
+  background-color: #227c9d;
+  padding: 30px 15px 30px 15px;
+  margin:20px;
+  border: 5px dotted #ffcb77;
+  color:white;
+}
+header nav{
+  background-color: #333;
+  color:white;
+}
+header nav ul{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+header nav li{
+  display:inline-block;
+  margin:10px;
+  padding:15px;
+}
+header nav a:visited{
+  color:white;
 }
 
-main{
-  background-color: chocolate;
-}
-
-
-section p{
-  color: aliceblue  
-}
-
-section > p{
-  color: aqua;
-}
-
-h2 + p{
-  text-decoration-line: line-through;
-}
-
-h2 ~ p{
-  color: brown;
-}
-
-.clase1{
+.article{
+  display:inline-block;
+  border:2px solid black;
+  border-radius: 10px;
+  width: 30%;
+  margin: 10px;
+  padding:15px;
   font-weight: bold;
-  display:block;
-  align-content: center;
-  height: 20rem;
-  margin: 4rem;
-  padding: 4rem;
-  background-color: orange;
-  border:1px solid black;
-  border-radius: 1rem;
 }
-
-
+.article h2{
+  margin-bottom: 10px;
+}
+.article p{
+  padding: 10px;
+}
+.article1{
+  background-color:#ffcb77
+}
+.article2{
+  background-color:#17c3b2
+}
+.article3{
+  background-color:#FE6D73
+}
