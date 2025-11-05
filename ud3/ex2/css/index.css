@@ -33,6 +33,11 @@ h2 ~ p{
   display:block;
   align-content: center;
   height: 20rem;
+  margin: 4rem;
+  padding: 4rem;
+  background-color: orange;
+  border:1px solid black;
+  border-radius: 1rem;
 }
 
 
