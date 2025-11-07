@@ -1,6 +1,13 @@
+@font-face {
+  font-family: Lexend;
+  src: url('../Assets/Lexend-VariableFont_wght.ttf') format('truetype');
+}
+
 *{
   border: 1px solid black;
   margin:0;
+  padding: 0;
+  font-family: Lexend;
 }
 
 header {
@@ -37,7 +44,13 @@ header div{
   display:block;
 }
 
+.faq summary {
+  padding:2rem;
+}
 
+.faq p{
+  padding:1rem;
+}
 
 .services h2 {
   display: block;
@@ -57,4 +70,19 @@ header div{
   margin-right: 1rem;
   white-space: normal;
   vertical-align: top;
+}
+
+.social div *{
+  display:inline;
+}
+
+footer {
+
+  padding: 0 3%; 
+}
+footer .column{
+  display:inline-block;
+  width: 45%;
+  margin: 0 1%;
+
 }
