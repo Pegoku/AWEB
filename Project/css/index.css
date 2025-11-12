@@ -115,6 +115,41 @@ main{
   line-height: 1.6;
 }
 
+
+
+.services h2 {
+  display: block;
+  white-space: normal;
+  padding-bottom: 1rem;
+  color:var(--color-secondary);
+}
+
+.servicesContainer {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 1rem 0;
+}
+
+.service {
+  min-width: 260px;
+  width: calc(100% / 3 - 1rem);
+  display: inline-block;
+  margin-right: 1rem;
+  white-space: normal;
+  vertical-align: top;
+  border: 1px solid var(--color-borders);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem var(--color-borders);
+  text-align:center;
+}
+
+.service h3{
+  color: var(--color-primary);
+  margin: 1rem 0.5rem;
+}
+
+
 .faq{
   margin: 3rem 0;
 }
@@ -150,25 +185,7 @@ main{
   background-color: var(--color-fonts);
 }
 
-.services h2 {
-  display: block;
-  white-space: normal;
-  margin-bottom: 1rem;
-}
 
-.servicesContainer {
-  overflow-x: auto;
-  white-space: nowrap;
-  padding: 1rem 0;
-}
-
-.service {
-  width: 260px;
-  display: inline-block;
-  margin-right: 1rem;
-  white-space: normal;
-  vertical-align: top;
-}
 
 .social div *{
   display:inline;
