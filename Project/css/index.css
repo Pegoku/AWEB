@@ -124,12 +124,13 @@ main{
   margin-bottom: 1rem;
 }
 
-.faqitem
+.faqItem
 {
   border: 1px solid var(--color-borders);
   border-radius: 0.75rem;
   background-color: var(--color-fonts);
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 
 .faq summary{
