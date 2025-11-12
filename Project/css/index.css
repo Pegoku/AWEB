@@ -45,6 +45,7 @@ header {
 }
 
 #navButton:hover, #navButton:focus{
+  fill: var(--color-borders)
  /* TODO: add animation/visual feedback */
 }
 
@@ -104,6 +105,7 @@ main{
   background-color: var(--color-emphasis);
   padding:2rem;
   border-radius:1rem;
+  margin-bottom: 1.5rem;
 }
 
 .tagline h2{
@@ -114,8 +116,6 @@ main{
   margin-bottom: 1.5rem; 
   line-height: 1.6;
 }
-
-
 
 .services h2 {
   display: block;
@@ -186,18 +186,22 @@ main{
 }
 
 
-
-.social div *{
-  display:inline;
+.about{
+  /* border: 1px solid black; */
+  
 }
 
-footer {
 
+footer {
   padding: 0 3%; 
+  /* border:2px solid black; */
 }
 footer .column{
   display:inline-block;
   width: 45%;
   margin: 0 1%;
 
+}
+.social div *{
+  display:inline;
 }
