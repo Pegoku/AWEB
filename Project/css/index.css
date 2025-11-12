@@ -106,12 +106,47 @@ main{
   border-radius:1rem;
 }
 
-.faq summary {
-  padding:2rem;
+.tagline h2{
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+}
+.tagline p{
+  margin-bottom: 1.5rem; 
+  line-height: 1.6;
+}
+
+.faq{
+  margin: 3rem 0;
+}
+
+.faq h2{
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+}
+
+.faqitem
+{
+  border: 1px solid var(--color-borders);
+  border-radius: 0.75rem;
+  background-color: var(--color-fonts);
+  overflow: hidden;
+}
+
+.faq summary{
+  padding: 2rem;
+  background-color: var(--color-secondary);
+  cursor:pointer;
+  font-weight: 600;
+}
+
+.faq details[open] summary{
+  background-color: var(--color-primary);
 }
 
 .faq p{
   padding:1rem;
+  line-height: 1.6;
+  background-color: var(--color-fonts);
 }
 
 .services h2 {
