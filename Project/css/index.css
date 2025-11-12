@@ -3,6 +3,17 @@
   src: url('../Assets/Lexend-VariableFont_wght.ttf') format('truetype');
 }
 
+:root{
+
+  --color-fonts: #F7F7F7;
+  --color-text: #191308;
+  --color-primary: #59C9A5;
+  --color-secondary: #677DB7;
+  --color-emphasis: #B9E3C6;
+  --color-borders: #E0E0E0;
+
+}
+
 *{
   border: 1px solid black;
   margin:0;
