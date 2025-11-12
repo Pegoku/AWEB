@@ -1,25 +1,25 @@
 @font-face {
   font-family: Lexend;
-  src: url('../Assets/Lexend-VariableFont_wght.ttf') format('truetype');
+  src: url("../Assets/Lexend-VariableFont_wght.ttf") format("truetype");
 }
 
-:root{
-  --color-fonts: #F7F7F7;
+:root {
+  --color-fonts: #f7f7f7;
   --color-text: #191308;
-  --color-primary: #59C9A5;
-  --color-secondary: #677DB7;
-  --color-emphasis: #B9E3C6;
-  --color-borders: #E0E0E0;
+  --color-primary: #59c9a5;
+  --color-secondary: #677db7;
+  --color-emphasis: #b9e3c6;
+  --color-borders: #e0e0e0;
 }
 
-*{
+* {
   color: var(--color-text);
-  margin:0;
+  margin: 0;
   padding: 0;
   font-family: Lexend;
   box-sizing: border-box;
 }
-body{
+body {
   background-color: var(--color-fonts);
 }
 
@@ -39,81 +39,84 @@ header {
   transform: translateY(-50%);
   background-color: transparent;
   border: none;
-  padding:0.5rem;
-  cursor:pointer;
+  padding: 0.5rem;
+  cursor: pointer;
   fill: var(--color-fonts);
 }
 
-#navButton:hover, #navButton:focus{
-  fill: var(--color-borders)
- /* TODO: add animation/visual feedback */
+#navButton:hover,
+#navButton:focus {
+  fill: var(--color-borders);
+  /* TODO: add animation/visual feedback */
 }
 
 header .mainHeader img {
   display: inline-block;
   top: 50%;
-  left: 50%
+  left: 50%;
 }
 
-button{
+button {
   background-color: var(--color-primary);
   border: none;
   color: var(--color-fonts);
   border-radius: 2rem;
   padding: 0.75rem 2rem;
   font-weight: 600;
-  cursor:pointer;
+  cursor: pointer;
   /* TODO: add animation */
 }
 
-button:hover, button:focus{
+button:hover,
+button:focus {
   background-color: var(--color-emphasis);
-  color:var(--color-text);
+  color: var(--color-text);
   border: 2px solid var(--color-primary);
 }
 
-a{
+a {
   color: var(--color-secondary);
 }
 
-a:hover, a:focus{
+a:hover,
+a:focus {
   color: var(--color-primary);
   text-decoration: underline;
 }
 
-.navButton{
-  width:47%;
+.navButton {
+  width: 47%;
   min-height: 4rem;
   margin: 0.5rem;
 }
 
-.actionButton{
-  width:30%;
+.actionButton {
+  width: 30%;
   min-height: 4rem;
   margin: 0.5rem;
 }
 
-header div{
-  display:block;
+header div {
+  display: block;
 }
 
-main{
+main {
   padding: 2rem;
 }
 
-.tagline{
+.tagline {
   background-color: var(--color-emphasis);
-  padding:2rem;
-  border-radius:1rem;
+  padding: 2rem;
+  border-radius: 1rem;
   margin-bottom: 1.5rem;
 }
 
-.tagline h2{
+.tagline h2 {
   color: var(--color-secondary);
   margin-bottom: 1rem;
 }
-.tagline p{
-  margin-bottom: 1.5rem; 
+.tagline p {
+  margin-bottom: 1.5rem;
   line-height: 1.6;
 }
 
@@ -121,7 +124,7 @@ main{
   display: block;
   white-space: normal;
   padding-bottom: 1rem;
-  color:var(--color-secondary);
+  color: var(--color-secondary);
 }
 
 .servicesContainer {
@@ -141,26 +144,24 @@ main{
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 0.5rem 1rem var(--color-borders);
-  text-align:center;
+  text-align: center;
 }
 
-.service h3{
+.service h3 {
   color: var(--color-primary);
   margin: 1rem 0.5rem;
 }
 
-
-.faq{
+.faq {
   margin: 3rem 0;
 }
 
-.faq h2{
+.faq h2 {
   color: var(--color-secondary);
   margin-bottom: 1rem;
 }
 
-.faqItem
-{
+.faqItem {
   border: 1px solid var(--color-borders);
   border-radius: 0.75rem;
   background-color: var(--color-fonts);
@@ -168,40 +169,45 @@ main{
   margin-bottom: 1rem;
 }
 
-.faq summary{
+.faq summary {
   padding: 2rem;
   background-color: var(--color-secondary);
-  cursor:pointer;
+  cursor: pointer;
   font-weight: 600;
 }
 
-.faq details[open] summary{
+.faq details[open] summary {
   background-color: var(--color-primary);
 }
 
-.faq p{
-  padding:1rem;
+.faq p {
+  padding: 1rem;
   line-height: 1.6;
   background-color: var(--color-fonts);
 }
 
-
-.about{
-  /* border: 1px solid black; */
-  
+.about {
+  border: 1px solid var(--color-borders);
+  padding: 2rem;
+  border-radius: 1rem;
 }
-
+.about h2 {
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+}
+.about p {
+  line-height: 1.6;
+}
 
 footer {
-  padding: 0 3%; 
+  padding: 0 3%;
   /* border:2px solid black; */
 }
-footer .column{
-  display:inline-block;
+footer .column {
+  display: inline-block;
   width: 45%;
   margin: 0 1%;
-
 }
-.social div *{
-  display:inline;
+.social div * {
+  display: inline;
 }
