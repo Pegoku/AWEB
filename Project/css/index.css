@@ -4,26 +4,32 @@
 }
 
 :root{
-
   --color-fonts: #F7F7F7;
   --color-text: #191308;
   --color-primary: #59C9A5;
   --color-secondary: #677DB7;
   --color-emphasis: #B9E3C6;
   --color-borders: #E0E0E0;
-
 }
 
 *{
-  border: 1px solid black;
+  color: var(--color-text);
   margin:0;
   padding: 0;
   font-family: Lexend;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--color-fonts);
 }
 
 header {
   position: relative;
   text-align: center;
+  color: var(--color-fonts);
+  background-color: var(--color-secondary);
+  padding: 1.5rem 6%;
+  border-bottom: 1px solid var(--color-borders);
 }
 
 #navButton {
