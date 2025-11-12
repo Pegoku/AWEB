@@ -71,6 +71,15 @@ button:hover, button:focus{
   border: 2px solid var(--color-primary);
 }
 
+a{
+  color: var(--color-secondary);
+}
+
+a:hover, a:focus{
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
 .navButton{
   width:47%;
   min-height: 4rem;
@@ -85,6 +94,16 @@ button:hover, button:focus{
 
 header div{
   display:block;
+}
+
+main{
+  padding: 2rem;
+}
+
+.tagline{
+  background-color: var(--color-emphasis);
+  padding:2rem;
+  border-radius:1rem;
 }
 
 .faq summary {
