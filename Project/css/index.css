@@ -230,15 +230,10 @@ footer p{
   color: var(--color-fonts);
 }
 
-
 .social div a {
-  display: inline;
+  display: inline-block;
   margin-right: 1rem;
-}
-
-
-.social a[href*="x.com"] {
-  font-size: 0; /* hide original text */
+  min-width: 2.5rem;
 }
 
 .social a[href*="x.com"]::after {
