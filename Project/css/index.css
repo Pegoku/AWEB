@@ -69,7 +69,7 @@ button {
 
 button:hover,
 button:focus {
-  background-color: var(--color-emphasis);
+  opacity: 50%;
   color: var(--color-text);
   border: 2px solid var(--color-primary);
 }
@@ -101,7 +101,7 @@ header div {
 }
 
 main {
-  padding: 2rem;
+  padding: 2rem 3%;
 }
 
 .tagline {
@@ -174,6 +174,7 @@ main {
   background-color: var(--color-secondary);
   cursor: pointer;
   font-weight: 600;
+  color:var(--color-fonts)
 }
 
 .faq details[open] summary {
@@ -190,6 +191,7 @@ main {
   border: 1px solid var(--color-borders);
   padding: 2rem;
   border-radius: 1rem;
+  box-shadow: 0.5rem 1rem 1rem var(--color-borders);
 }
 .about h2 {
   color: var(--color-secondary);
@@ -200,14 +202,40 @@ main {
 }
 
 footer {
-  padding: 0 3%;
+  padding: 1rem 3%;
+  background-color: var(--color-secondary);
   /* border:2px solid black; */
 }
+
 footer .column {
   display: inline-block;
   width: 45%;
   margin: 0 1%;
 }
+
+footer .column div{
+  margin: 1rem;
+}
+footer h3{
+  color: var(--color-fonts);
+  margin-bottom: 1rem;
+  font-weight: 800;
+  /* color:var(--color-borders); */
+}
+
+
+footer p{
+  color: var(--color-fonts);
+}
+footer a{
+  color: var(--color-primary);
+  text-decoration: none;
+}
+footer a:hover{
+  color: var(--color-emphasis);
+  text-decoration: none;
+}
+
 .social div * {
   display: inline;
 }
