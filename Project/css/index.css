@@ -35,19 +35,19 @@ header {
   padding: 0.75rem 0;
 }
 nav{
-  padding: 0 6% 0.75rem ;
+  padding: 0 6%;
 }
 
 #navButton {
-  position: sticky;
+  position:fixed; 
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
   background-color: transparent;
   border: none;
   padding: 0.5rem;
   cursor: pointer;
   fill: var(--color-fonts);
+  z-index: 15;
 }
 
 #navButton:hover{
