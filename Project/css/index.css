@@ -25,18 +25,23 @@ body {
 }
 
 header {
-  position: relative;
+  position: static;
+}
+.headerDiv
+{
   text-align: center;
   color: var(--color-fonts);
   background-color: var(--color-secondary);
-  padding: 1.5rem 6%;
-  border-bottom: 1px solid var(--color-borders);
+  padding: 0.75rem 0;
+}
+nav{
+  padding: 0 6% 0.75rem ;
 }
 
 #navButton {
-  position: absolute;
+  position: sticky;
   left: 0;
-  top: 25%;
+  top: 50%;
   transform: translateY(-50%);
   background-color: transparent;
   border: none;
@@ -48,6 +53,13 @@ header {
 #navButton:hover{
   fill: var(--color-borders);
   /* TODO: add animation/visual feedback */
+}
+
+.actionMainDiv{
+  position: sticky;
+  background-color: var(--color-secondary);
+  top: 0;
+  z-index: 10;
 }
 
 header .mainHeader img {
@@ -95,8 +107,10 @@ a:hover, a:hover *{
   margin: 0.5rem;
 }
 
+
+
 header div {
-  display: block;
+  overflow: hidden;
 }
 
 main {
