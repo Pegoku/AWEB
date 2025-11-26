@@ -1,5 +1,5 @@
 $(window).on("scroll", function () {
-  if ($(window).width() <= 768) {
+  if ($(window).width() <= 896) {
     // console.log($(window).width());
     var scroll = $(window).scrollTop();
     var progress = Math.min(scroll / 90, 1);
