@@ -7,7 +7,7 @@ $(window).on("scroll", function () {
       (1 - (1 - progress) * (1 - progress)) * 90
     ); // 90(1-(1-x)**2)
     console.log(headerXPosition);
-    $(".actionDiv").css({
+    $(".actionMainDiv div").css({
       transform: "translateX(" + headerXPosition + "px)",
       width: "calc(100% - " + headerXPosition + "px)",
     });

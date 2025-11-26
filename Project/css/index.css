@@ -38,7 +38,7 @@ nav{
   padding: 0 6%;
 }
 
-#navButton {
+#menuButton {
   position:fixed; 
   left: 0;
   top: 4px;
@@ -50,7 +50,7 @@ nav{
   z-index: 15;
 }
 
-#navButton:hover{
+#menuButton:hover{
   fill: var(--color-borders);
   /* TODO: add animation/visual feedback */
 }
@@ -97,11 +97,26 @@ a:hover, a:hover *{
   cursor: pointer;
 }
 
-.navButton {
+
+.MactionDiv .navButton {
   width: calc(50% - 0.75rem);
   min-height: 4rem;
   margin: 0.25rem;
 }
+
+.TactionDiv .navButton {
+  width: calc(33.3% - 0.75rem);
+  min-height: 4rem;
+  margin: 0.25rem;
+}
+
+.DactionDiv .navButton {
+  width: calc(16.6% - 0.75rem);
+  min-height: 4rem;
+  margin: 0.25rem;
+}
+
+
 
 .actionButton {
   width: 50%;
@@ -259,4 +274,23 @@ footer p{
 
 .social a[href*="x.com"]:hover::after {
   content: '𝕏';
+}
+
+
+@media (width <= 624px) {
+  .TactionDiv, .DactionDiv{
+    display:none;
+  }
+}
+
+@media (width >= 624px ) and (width <= 896px ) {
+  .MactionDiv, .DactionDiv{
+    display:none
+  }
+}
+
+@media (width >= 896px) {
+  .MactionDiv, .TactionDiv{
+    display:none;
+  }
 }
