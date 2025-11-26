@@ -1,5 +1,7 @@
 $(window).on('scroll',function(){
-  var headerXPosition = Math.min(Math.round($(window).scrollTop()/15), 3);
+  var scroll = $(window).scrollTop();
+  var progress = Math.min(scroll / 90, 1);
+  var headerXPosition = Math.round((1 - (1 - progress) * (1 - progress)) * 90); // 90(1-(1-x)**2)
   console.log(headerXPosition);
-  $('.actionDiv').css('transform','translateX('+(headerXPosition)+'rem)');
+  $('.actionDiv').css({'transform':'translateX('+(headerXPosition)+'px)', 'width':'calc(100% - '+(headerXPosition)+'px)'});
 });

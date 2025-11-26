@@ -41,7 +41,7 @@ nav{
 #navButton {
   position:fixed; 
   left: 0;
-  top: 0;
+  top: 4px;
   background-color: transparent;
   border: none;
   padding: 0.5rem;
@@ -60,6 +60,8 @@ nav{
   background-color: var(--color-secondary);
   top: 0;
   z-index: 10;
+  padding:0.5rem;
+  overflow: hidden;
 }
 
 header .mainHeader img {
@@ -96,13 +98,13 @@ a:hover, a:hover *{
 }
 
 .navButton {
-  width: 47%;
+  width: calc(50% - 0.75rem);
   min-height: 4rem;
-  margin: 0.5rem;
+  margin: 0.25rem;
 }
 
 .actionButton {
-  width: 30%;
+  width: 50%;
   min-height: 4rem;
   margin: 0.5rem;
 }
@@ -218,15 +220,15 @@ main {
 }
 
 footer {
-  padding: 1rem 3%;
+  padding: 1rem 2%;
   background-color: var(--color-secondary);
   /* border:2px solid black; */
 }
 
 footer .column {
   display: inline-block;
-  width: 45%;
-  margin: 0 1%;
+  width: 48%;
+  /* margin: 0 1%; */
 }
 
 footer .column div{
