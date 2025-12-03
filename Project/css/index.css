@@ -79,19 +79,20 @@ button {
   padding: 0.75rem 2rem;
   font-weight: 600;
   cursor: pointer;
-  
+  transition: all 0.2s ease;
   /* TODO: add animation */
 }
 
 button:hover{
   background-color: var(--color-primary-hover);
   color: var(--color-fonts);
+  transform: translateY(-1px);
 }
 
 a, a *{
   color: var(--color-primary);
   text-decoration: none;
-  
+  transition: color 0.2s ease;
 }
 a:hover, a:hover *{
   color: var(--color-primary-hover);
@@ -195,11 +196,12 @@ main {
   overflow: hidden;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   text-align: center;
-  
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   background-color: var(--color-fonts);
 }
 
 .service:hover{
+  transform: translateY(-2px);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
