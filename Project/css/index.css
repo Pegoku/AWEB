@@ -31,7 +31,7 @@ header {
 .headerDiv
 {
   text-align: center;
-  color: var(--color-text);
+  color: var(--color-fonts);
   background-color: var(--color-secondary);
   padding: 0.75rem 0;
 }
@@ -53,7 +53,6 @@ nav{
 
 #menuButton:hover{
   fill: var(--color-borders);
-  /* TODO: add animation/visual feedback */
 }
 
 .actionMainDiv{
@@ -76,11 +75,10 @@ button {
   border: none;
   color: var(--color-fonts);
   border-radius: 0.375rem;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
-  /* TODO: add animation */
 }
 
 button:hover{
