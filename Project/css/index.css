@@ -39,7 +39,7 @@ nav{
   padding: 0 6%;
 }
 
-#menuButton {
+#menuButton{
   position:fixed; 
   left: 0;
   top: 4px;
@@ -53,6 +53,22 @@ nav{
 
 #menuButton:hover{
   fill: var(--color-borders);
+}
+
+#menuClose
+{
+  position:fixed; 
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  stroke: var(--color-fonts);
+  z-index: 15;
+}
+
+#menuClose:hover{
+  stroke: var(--color-borders);
 }
 
 .actionMainDiv{
@@ -299,6 +315,26 @@ footer p{
   content: '𝕏';
 }
 
+
+.hidden{
+  transform: translateX(-100%);
+}
+menu {
+  visibility: visible;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-primary);
+  transition: transform 0.4s ease-in-out;
+  transform: translateX(0);
+  padding: 2rem;
+}
+menu a{
+  color: var(--color-emphasis);
+}
 
 @media (width <= 624px) {
   .TactionDiv, .DactionDiv{

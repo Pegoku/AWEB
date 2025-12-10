@@ -13,3 +13,17 @@ $(window).on("scroll", function () {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menuButton = document.getElementById("menuButton");
+  const menuClose = document.getElementById("menuClose");
+  const menu = document.querySelector("menu");
+
+  menuButton.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+
+  menuClose.addEventListener("click", () => {
+    menu.classList.add("hidden");
+  });
+});
