@@ -225,6 +225,10 @@ main {
   margin: 1rem 0.5rem;
 }
 
+.service img{
+  width: 260px;
+}
+
 .faq {
   margin: 3rem 0;
 }
