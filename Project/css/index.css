@@ -69,6 +69,8 @@ nav{
 
 #menuClose:hover{
   stroke: var(--color-borders);
+  transform: translateY(-1px);
+  transition: transform 0.2s ease;
 }
 
 .actionMainDiv{
@@ -288,6 +290,17 @@ footer .column {
 footer .column div{
   margin: 1rem;
 }
+footer .column svg{
+  width: 20px;
+  height: 20px;
+  fill: var(--color-fonts);
+  background-color: var(--color-secondary);
+}
+
+footer .column p >*{
+  display:inline-block;
+}
+
 footer h3{
   color: var(--color-fonts);
   margin-bottom: 1rem;
@@ -296,23 +309,48 @@ footer h3{
 }
 
 
-footer p{
+footer p, footer span{
   color: var(--color-fonts);
 }
 
 .social div a {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 1rem;
   min-width: 2.5rem;
+  /* max-width: 2.5rem; */
+  /* overflow: hidden; */
+  white-space: nowrap;
+  transition: max-width 0.25s ease-in-out;
 }
 
-.social a[href*="x.com"]::after {
+footer .social a:hover {
+  max-width: 14rem;
+}
+
+/* .social a[href*="x.com"]::after {
   content: 'X';
   font-size: 1rem;
 }
 
 .social a[href*="x.com"]:hover::after {
   content: '𝕏';
+} */
+footer .social .logoText{
+  display: inline-block;
+  color: var(--color-fonts);
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transform: translateX(-0.5rem);
+  transition: max-width 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
+}
+
+footer .social a:hover .logoText{
+  max-width: 12rem;
+  opacity: 1;
+  transform: translateX(0);
 }
 
 
@@ -334,6 +372,14 @@ menu {
 }
 menu a{
   color: var(--color-emphasis);
+}
+menu ul {
+  list-style: none;
+  margin-left: 0.5rem;
+  margin-top:1rem;
+}
+menu li{
+  line-height: 2rem;
 }
 
 @media (width <= 624px) {
