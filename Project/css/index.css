@@ -393,6 +393,10 @@ menu li{
   .TactionDiv, .DactionDiv{
     display:none;
   }
+  .social div a{
+    display:block;
+    margin-bottom: 0.5rem;
+  }
 }
 
 @media (width > 624px ) and (width <= 896px ) {
