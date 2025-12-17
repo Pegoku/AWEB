@@ -395,13 +395,13 @@ menu li{
   }
 }
 
-@media (width >= 624px ) and (width <= 896px ) {
+@media (width > 624px ) and (width <= 896px ) {
   .MactionDiv, .DactionDiv{
     display:none
   }
 }
 
-@media (width >= 896px) {
+@media (width > 896px) {
   .MactionDiv, .TactionDiv, #menuButton{
     display:none;
   }
