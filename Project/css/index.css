@@ -331,6 +331,9 @@ footer p, footer span{
 footer .social a:hover {
   max-width: 14rem;
 }
+img[alt="Logo"]{
+  height:68px;
+}
 
 /* .social a[href*="x.com"]::after {
   content: 'X';
