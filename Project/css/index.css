@@ -20,6 +20,7 @@
   font-family: Lexend;
   box-sizing: border-box;
 }
+
 body {
   background-color: var(--color-fonts);
   min-width: 300px;
@@ -31,6 +32,7 @@ body {
   background-color: var(--color-secondary);
   padding: 0.75rem 0;
 }
+
 header {
   position: static;
   .mainHeader img {
@@ -61,6 +63,7 @@ header {
     fill: var(--color-borders);
   }
 }
+
 #menuClose {
   position: fixed;
   top: 0.5rem;
@@ -110,6 +113,7 @@ a * {
   text-decoration: none;
   transition: color 0.2s ease;
 }
+
 a:hover,
 a:hover * {
   color: var(--color-primary-hover);
@@ -364,6 +368,7 @@ footer {
 img[alt="Logo"] {
   height: 68px;
 }
+
 .hidden {
   transform: translateX(-100%);
 }
