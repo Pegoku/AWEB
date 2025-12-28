@@ -372,6 +372,7 @@ img[alt="Logo"] {
 .hidden {
   transform: translateX(-100%);
 }
+
 menu {
   visibility: visible;
   position: fixed;
@@ -384,19 +385,18 @@ menu {
   transition: transform 0.4s ease-in-out;
   transform: translateX(0);
   padding: 2rem;
+  a {
+    color: var(--color-emphasis);
+  }
+  ul {
+    list-style: none;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+  }
+  li {
+    line-height: 2rem;
+  }
 }
-menu a {
-  color: var(--color-emphasis);
-}
-menu ul {
-  list-style: none;
-  margin-left: 0.5rem;
-  margin-top: 1rem;
-}
-menu li {
-  line-height: 2rem;
-}
-
 @media (width <= 624px) {
   .TactionDiv,
   .DactionDiv {
